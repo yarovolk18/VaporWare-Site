@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: 0;
+    list-style: 0;
+    text-decoration: none; 
+}
+
+/*
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+*/
+
+:root {
+    --color-bg: white;
+    --color-outline: rgb(27, 3, 20);
+    --color-bg-variant:  rgb(87, 31, 87);
+    --color-primary: #020e16;
+    --color-primary-variant: rgb(46, 43, 46);
+    --color-text: #0a0a0a;
+    --color-text-2: rgba(20, 1, 1, 0.6);
+
+    --container-width-lg: 70%;
+    --container-width-md: 86%;
+    --container-width-ms: 90%;
+
+    --transition: 400ms ease;
+}
+
+:html {
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    font-family: 'Volkhov', serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    /*background-image:url(../src/assets/ivoryBackGeneral.jpg);*/
+}
+
+/* ============== GENERAL STYLES ============== */
+.container{
+    width: var(--container-width-lg);
+    margin : auto auto auto auto;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+h3{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+h4{
+    text-align: left;
+    color: black;
+    font-size: 1rem;
+}
+
+h5{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+section {
+    color: black;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height: 15%;
+
+
+}
+
+section > h3, section > h5 {
+    text-align: center;
+    align-items: center;
+    color: var(--color-text-2);
+}
+
+.text-light {
+    color: var(---color-text-2);
+}
+
+a {
+    color: var(--color-bg-variant);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-text);
+    
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-text);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--color-text);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    width: max-content;
+    display: inline-block;
+    background: var(--color-text);
+    color: var(--color-bg);
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-text);
+    transition: var(--transition);
+}
+.btn-primary:hover{
+    background: var(--color-bg-variant);
+    color: var(--color-text);
+    border-color: transparent;
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: auto;
+}
+
+/* ============================ MEDIA QUERIES (Medium Devices) ============================ */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width : var(--container-width-md);
+    }
+
+    section{
+        margin-top: 0rem;
+        align-items: center;
+    }
+}
+
+/* ============================ MEDIA QUERIES (Small Devices) ============================ */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width : var(--container-width-ms);
+    }
+
+    section{
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+}
+    

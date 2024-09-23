@@ -1,0 +1,50 @@
+.team {
+    height: 10%;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2.5rem;
+}
+
+.team__item {
+    background: var(--color-bg-variant);
+    align-items: center;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    height:  fit-content;
+    width: fit-content;
+}
+
+.team__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.team__item-image {
+    border-radius: 50%;
+    align-items: center;
+    overflow: hidden;
+    height: 12rem;
+    width: 12rem;
+    
+}
+
+.team__item h4 {
+    margin: 1.2rem 0 0 0;
+    size: 1rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.team__item-cta {
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

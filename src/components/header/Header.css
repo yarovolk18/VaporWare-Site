@@ -1,0 +1,80 @@
+header {
+    background: linear-gradient(to right, var( --color-outline),  var(--color-bg-variant), var( --color-outline));
+    color: var(--color-bg);
+    padding: 3rem 0;
+    margin-top: -1rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.logo-image {
+    overflow: hidden;
+    align-items: center;
+    width: 50vh;
+    height: 85%;
+}
+
+.logo-image:hover {
+    transform: rotate(0);
+}
+/* =================== CTA =================== */
+
+.cta {
+    margin-top: -1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+/* =================== HEADER SOCIALS =================== */
+
+.header__socials {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    height: 1rem;
+    
+}
+
+.github__icons {
+    font-size: 2rem;
+}
+.github__icons:hover {
+    font-size: 2.5rem;
+    transition: var(--transition);
+}
+
+/* =================== SCROLL DOWN =================== */
+
+.scroll__down {
+    position: absolute;
+    right: -5%;
+    top: 60%;
+    transform: rotate(90deg);
+    font-weight: 100px;
+    font-size: 0.9rem;
+}
+
+/* ============================ MEDIA QUERIES (Medium Devices) ============================ */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width : var(--container-width-md);
+    }
+
+}
+
+/* ============================ MEDIA QUERIES (Small Devices) ============================ */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width : var(--container-width-ms);
+    }
+}
+    
