@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css' 
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import { FiFolderPlus } from "react-icons/fi"
 import imageRoom from '../../assets/vwconceptart.png'
 
 
@@ -31,7 +31,7 @@ const About = () => {
             </article>
 
             <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
+              <FiFolderPlus className='about__icon'/>
               <h5>Projects</h5>
               <small>100+ Complete</small>
             </article>
