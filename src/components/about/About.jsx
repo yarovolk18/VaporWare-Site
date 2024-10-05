@@ -21,19 +21,19 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>Collective 25+ of Work Experience</small>
+              <h6>Collective 20+ year of Work Experience</h6>
             </article> 
 
             <article className='about__card'>
               <FiUsers className='about__icon'/>
               <h5>Pizzas Eaten</h5>
-              <small>50+ Pizzas</small>
+              <h6>50+ Pizzas</h6>
             </article>
 
             <article className='about__card'>
               <FiFolderPlus className='about__icon'/>
               <h5>Projects</h5>
-              <small>100+ Complete</small>
+              <h6>100+ Complete</h6>
             </article>
           </div>
           {/* TEXT */}
@@ -56,6 +56,7 @@ const About = () => {
           <div className="about__me-image">
             <img src = {imageRoom} alt = ""/>
           </div>
+          <a href="https://hartwork.carrd.co/" className='btn btn-primary'> Like what you see? Check out more!</a>
         </div>
       </div>
         

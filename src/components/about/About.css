@@ -57,8 +57,12 @@
     cursor: default;
 }
 
+.about__card:hover h5, .about__card:hover h6, .about__card:hover .about_icon {
+    color: black;
+}
+
 .about_icon {
-    color: var(--color-primary);
+    color: white;
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -75,8 +79,9 @@
 .about__content p {
     font-size: 0.8rem;
     margin: 1rem 0 0rem;
-    color: var(--color-light)
+    color: var(--color-light);
 }
+
 
 
 /* ==================== MEDIA SCREEN (Medium Devices) ==================== */

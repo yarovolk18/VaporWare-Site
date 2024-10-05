@@ -1,51 +1,57 @@
 .team {
-    height: 10%;
+    height: 20%;
     text-align: center;
-    align-items: center;
 }
 
 .team__container {
-    border-radius: 10rem;
-    border: 2px solid;
-    border-color: var(--color-primary);
-    align-items: center;
-    height: fit-content;
+    border-radius: 5rem; /* Reduce the border-radius to prevent clipping */
+    border: 5px solid var(--color-primary);
+    height: 100%;
     width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible; /* Ensure that slides are fully visible, even outside the border */
+    position: relative;
 }
 
 .team__item {
     background: var(--color-bg-variant);
     text-align: center;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    height: 20rem;
-    width: 8rem;
+    border-radius: 10rem; /* Adjust border-radius to fit better */
+    border: 3px solid black;
+    width: 50%; /* Adjust width to fit container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
-.team__item:hover{
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
-.team__item__image{
+.team__item__image {
     margin-top: 1rem;
     border-radius: 7rem;
-    margin-left: 10rem;
-    align-items: center;
-    overflow: hidden;
+    margin-left: 4.5rem;
     height: 15rem;
     width: 15rem;
+    object-fit: cover;
+}
+
+.team__item:hover {
+    border-color: var(--color-orange);
 }
 
 .team__item h4 {
-    margin: 1.2rem 0 0 0;
+    margin: 0rem 0 1rem 0;
     text-align: center;
-    size: 1rem;
     color: var(--color-text);
 }
 
 .team__item-cta {
-    text-align: left;
     text-align: center;
     margin-top: -1rem;
     margin-bottom: 3rem;
@@ -54,74 +60,34 @@
 /* ==================== MEDIA SCREEN (Medium Devices) ==================== */
 @media screen and (max-width: 1024px) {
     .team__container {
-        align-items: center;
-        width: 20rem;
-        margin: 2rem 2rem 2rem 2rem;
-        height: fit-content;
+        width: 80%; /* Adjust the width for medium screens */
     }
 
     .team__item {
-        display: flex;
-        flex-direction: column;
-        background: var(--color-bg-variant);
-        text-align: center;
-        border-radius: 2rem;
-        border: 1px solid transparent;
-        margin: 2rem 2rem 2rem 2rem;
-        height: 10rem;
-        width: fit-content;
+        width: 100%; /* Allow slides to fill available width on smaller screens */
+        height: auto;
     }
-    
-    .team__item:hover{
-        border-color: var(--color-primary-variant);
-        background: transparent;
-    }
-    
-    .team__item__image{
-        margin-top: 1rem;
-        border-radius: 7rem;
-        margin-left: 1rem;
-        align-items: center;
-        overflow: hidden;
+
+    .team__item__image {
         height: 12rem;
         width: 12rem;
     }
-
-
 }
 
 /* ==================== MEDIA SCREEN (Small Devices) ==================== */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .team__container {
-        align-items: center;
-        width: 20rem;
-        margin: 2rem 2rem 2rem 2rem;
-        height: fit-content;
+        width: 90%; /* Further adjust container width on small screens */
     }
 
     .team__item {
-        display: flex;
-        flex-direction: column;
-        background: var(--color-bg-variant);
-        text-align: center;
-        border-radius: 2rem;
-        border: 1px solid transparent;
-        height: 20rem;
-        width: 7rem;
+        width: 100%; /* Full width for small devices */
+        height: auto;
     }
-    
-    .team__item:hover{
-        border-color: var(--color-primary-variant);
-        background: transparent;
-    }
-    
-    .team__item__image{
-        margin-top: 1rem;
-        border-radius: 7rem;
-        margin-left: 1rem;
-        align-items: center;
-        overflow: hidden;
+
+    .team__item__image {
         height: 8rem;
         width: 8rem;
+        margin-left: 7rem;
     }
 }
